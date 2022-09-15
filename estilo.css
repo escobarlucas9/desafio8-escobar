@@ -1,0 +1,176 @@
+body {
+    background-color: black;
+  }
+  .contenedor {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "asideIndex asideIndex"
+      "footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 2fr 2fr auto;
+  }
+  
+  .headerIndex {
+    grid-area: header;
+  }
+  header .navbar-brand {
+    font-family: "Cantata One", serif;
+  }
+  
+  header nav ul li {
+    font-size: 1.2rem;
+  }
+  
+  header a {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  /*main de index*/
+  .mainIndex {
+    grid-area: main;
+  }
+  .mainIndex div {
+    display: flex;
+    background-color: red;
+  }
+  .mainIndex .barba {
+    width: 50%;
+  }
+  .mainIndex .peine {
+    width: 20%;
+    height: 30%;
+    position: relative;
+    top: 7rem;
+    left: 15rem;
+  }
+  .mainIndex h1 {
+    color: white;
+    font-size: 8rem;
+    font-family: "Cantata One", serif;
+  }
+  
+  .asideIndex {
+    grid-area: aside_index;
+   
+  }
+  #contenedor_servicios {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+  }
+  h2 {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+  }
+   #contenedor_servicios .card {
+    background-color: black;
+    width: 300px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid gray;
+    margin-top: 2rem;
+    border-radius: 10px;
+  }
+  
+  .img_servicio {
+    width: 250px;
+    margin: auto;
+  }
+  .titulo {
+      color: white;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      text-decoration: underline;
+  }
+  .precio {
+      color: white;
+      font-size: 1rem;
+      margin-left: 1rem;
+  
+  }
+  .boton {
+      padding: 5px;
+      cursor: pointer;
+  }
+  .boton:hover {
+      background-color: rgb(61, 59, 59);
+  }
+  
+  aside .contenedor_elegido {
+      background-color: black;
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .contenedor_elegido .card {
+      background-color: black;
+    width: 300px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  
+  }
+  
+  #formulario {
+    width: 400px;
+  padding: 50px;
+  margin: auto;
+  margin-top: 100px;
+  background-color: rgb(64, 64, 65);
+  color: white;
+  border-radius: 4px;
+  display: none;
+  }
+  #formulario h4 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  
+    
+  }
+  
+  #formulario input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  background-color: rgb(64, 64, 65);
+  border-radius: 4px;
+  border: 1px solid rgb(241, 241, 243);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  color: white;
+  }
+  
+  #error {
+    margin-top: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+  }
+  #terminar {
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    background-color: rgb(64, 64, 65);
+    color: white;
+  }
+  #terminar:hover {
+    background-color: gray;
+  }
+
+  
+  .footerIndex {
+      grid-area: footer;
+      background-color: black;
+    
+    }
+   
